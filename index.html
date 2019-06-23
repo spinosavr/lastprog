@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Արշակ Եսայան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background:linear-gradient(90deg, green 50%, white 51%);"></td>
+                <td>Կանաչն ու սպիտակը խոտն է, սպիտակը ձմռան ժամանակ է, կանաչը` մնացած ժամանակ է: Սպիտակը չի շարժվում, իսկ կանաչը 2 ցիկլը մեկ, մահանում են խոտակերից:</td>
+                <td id="grassCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>Նարնջագույնը խոտակերն է, որը բազմանում է 4 հատ խոտ ուտելուց հետո և մահանում է 5 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը:</td>
+                <td id="grassEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչն է, որը բազմանում է 5 հատ խոտակեր ուտելուց հետո և մահանում է 8 հատ չուտելուց հետո, կամ երբ նրան ուտում է որսորդը:</td>
+                <td id="gishCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Կապույտը որսորդն է, որը բազմանում է 8 հատ գիշատիչ ուտելուց հետո և մահանում է 10 հատ չուտելուց հետո:</td>
+                <td id="amenCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Դեղինը չաղ փիղ է, որը բազմանում է 100 հատ խոտ ուտելուց հետո և մահանում է 100 հատ չուտելուց հետո:</td>
+                <td id="pixCount"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="p1"></p>
+    <button id="pElement">Արմագեդոն</button>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
